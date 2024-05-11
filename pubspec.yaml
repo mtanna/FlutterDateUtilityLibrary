@@ -1,6 +1,6 @@
 name: date_utility
 description: "A Project for get date methods"
-version: 0.0.8
+version: 0.0.9
 homepage: https://github.com/mtanna/FlutterDateUtilityLibrary.git
 
 environment:

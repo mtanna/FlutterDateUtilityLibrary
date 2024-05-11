@@ -3,7 +3,7 @@ library date_utility;
 import 'package:intl/intl.dart';
 
 class DateUtility {
-  String millisecondToDate(int timestamp,
+  static String millisecondToDate(int timestamp,
       {String formatPattern = 'yyyy-MM-dd'}) {
     try {
       DateTime dateTime = DateTime.fromMillisecondsSinceEpoch(timestamp);
@@ -16,7 +16,7 @@ class DateUtility {
   }
 
   /// [dateTomillisecond] this function convert date into millisecond
-  dynamic dateToMillisecond(String timestamp) {
+  static dynamic dateToMillisecond(String timestamp) {
     try {
       if (timestamp == '') {
         return DateTime.now().millisecondsSinceEpoch;
@@ -54,7 +54,7 @@ class DateUtility {
   //   }
   // }
 
-  dynamic daysBetween(String fromDate, String toDate) {
+  static dynamic daysBetween(String fromDate, String toDate) {
     try {
       DateTime from = DateTime.parse(fromDate);
       DateTime to = DateTime.parse(toDate);
@@ -66,7 +66,7 @@ class DateUtility {
     }
   }
 
-  dynamic daysBetweenWithMilliSecond(
+  static dynamic daysBetweenWithMilliSecond(
       int fromDateMillisecond, int toDateMillisecond) {
     try {
       DateTime from = DateTime.fromMillisecondsSinceEpoch(fromDateMillisecond);
@@ -79,7 +79,8 @@ class DateUtility {
     }
   }
 
-  String timeAgoSinceDate(String dateString, {bool numericDates = true}) {
+  static String timeAgoSinceDate(String dateString,
+      {bool numericDates = true}) {
     try {
       DateTime date = DateTime.parse(dateString);
       final date2 = DateTime.now();
@@ -119,7 +120,7 @@ class DateUtility {
     }
   }
 
-  String timeAgoSinceMilliseconds(int milliseconds,
+  static String timeAgoSinceMilliseconds(int milliseconds,
       {bool numericDates = true}) {
     try {
       DateTime date = DateTime.fromMillisecondsSinceEpoch(milliseconds);
