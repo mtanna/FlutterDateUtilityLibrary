@@ -36,7 +36,7 @@ A Project for get date methods
 
     - Example 1:
  
-          DateUtility.changeDateFormat('2024-05-11', 11 May 2024);    // 2024-05-11 convert to 11 May 2024
+          DateUtility.changeDateFormat('2024-05-11', '11 May 2024');    // 2024-05-11 convert to 11 May 2024
       
     - Example 2:
  
