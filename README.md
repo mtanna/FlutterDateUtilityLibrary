@@ -16,11 +16,11 @@ A Project for get date methods
 
     - Example 1:
  
-          DateUtility.millisecondToDate(1715365800000, 'yyyy-MM-dd');    // 2024-05-11
+          DateUtility.millisecondToDate(1715365800000, formatPattern: 'yyyy-MM-dd',);    // 2024-05-11
       
     - Example 2:
  
-          DateUtility.millisecondToDate(1715365800000, 'd MMM yyyy');    // 11 May 2024
+          DateUtility.millisecondToDate(1715365800000, formatPattern: 'd MMM yyyy',);    // 11 May 2024
           
 2. Convert date to milliseconds
 
@@ -56,11 +56,11 @@ A Project for get date methods
    
     - Example 1:
  
-          DateUtility.timeAgoSinceDate('2024-05-10', true);    // 1 day ago
+          DateUtility.timeAgoSinceDate('2024-05-10', numericDates: true,);    // 1 day ago
       
     - Example 2:
  
-          DateUtility.timeAgoSinceMilliseconds(1715279400000, true);    // 1 days ago
+          DateUtility.timeAgoSinceMilliseconds(1715279400000, numericDates: true,);    // 1 days ago
 
       | numericDates = true | numericDates = false |
       |-------------------- | -------------------- |
