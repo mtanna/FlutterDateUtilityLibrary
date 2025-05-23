@@ -1,6 +1,6 @@
 name: date_utility
 description: "A Project for get date methods"
-version: 0.1.5
+version: 0.1.6
 homepage: https://github.com/mtanna/FlutterDateUtilityLibrary.git
 
 environment:
@@ -12,7 +12,7 @@ dependencies:
     sdk: flutter
   # flutter_localizations: # This is for language selection
   #   sdk: flutter
-  intl: ^0.19.0
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:
